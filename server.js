@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const wss = new WebSocket.Server({ port: 3001 });
+const wss = new WebSocket.Server({ port: process.env.PORT || 3001 });
 
 const rooms = {}; // เก็บข้อมูลห้องต่างๆ
 
